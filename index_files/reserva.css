@@ -1,0 +1,183 @@
+.reserva {
+    background-color:transparent;
+    width: 100%;
+    position: fixed;
+    top: 135px;
+    left: 0px;
+    z-index: 999;
+	text-align:center;
+}
+.reserva .formulario {
+    background-color:#985947;
+}
+.reserva-scroll-top {top:80px;}
+
+.reserva span {
+	text-transform:uppercase;
+	padding-right:10px;
+	color: rgb(255, 255, 255);
+    margin-left: 1%;
+    margin-right: 3px;
+}
+
+.reserva p {
+    width: auto;
+    margin: 0px;
+    padding: 8px 0px 0px;
+    height: 60px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.reserva input{
+    width:35px;
+    text-align:center;
+    padding: 0px;
+}
+
+.reserva  .hasDatepicker {
+    width: 100px;	
+}
+
+.reserva input[type="submit"]{
+    color:#fff;
+    height:auto;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0;
+    padding: 12px 24px 25px 24px;
+    text-transform: uppercase;
+    width: auto !important;
+	background-color:#4E4F52!important;
+    border:none;
+	font-weight:bold;
+}
+
+
+.boton-reservas-responsivo{
+    display:none;
+}
+
+/** Huincha Informativa **/
+div.huincha {
+    background-color:rgba(58,59,63,1);
+    color:#ffffff;
+    opacity: 1;
+}
+div.huincha div.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+div.huincha div.contenedor div.boton{
+    margin-left: 60px;
+}
+div.huincha.transparencia{
+    opacity: .8;
+}
+div.huincha div.contenedor div.texto {
+    font-size: 14px !important;
+    color:#ffffff;
+}
+div.huincha div.contenedor div.boton .btn {
+    color:#ffffff;
+    background-color: #A26A59;
+    width:auto !important;
+    border:none;
+    padding: 4px 8px;
+    margin:0;
+    font-size: 12px;
+    border-radius: 3px;
+    border: solid 2px #A26A59;
+}
+div.huincha div.contenedor div.boton .btn:hover {
+    background-color: rgb(63,63,63);
+}
+div.espaciado {
+    height:59px;
+    clear:both;
+}
+/** FIN Huincha Informativa **/
+
+/** Huincha Informativa Mobile **/
+.huincha-responsivo{
+    display:none;
+    visibility:hidden;
+}
+/** FIN Huincha Informativa Mobile **/
+
+
+/* barra reserva responsiva */
+@media only screen and (max-width:768px){
+
+    .reserva {
+    display:none;
+    }
+    .boton-reservas-responsivo{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        bottom: 0;
+        height: 70px;
+        background-color: #985947;
+        color: rgb(255, 54, 0);
+        margin-left: 0%;
+        padding-top: 0px;
+        text-align: center;
+        z-index:550;
+    }
+    .boton-reservas-responsivo a {
+        display:block;
+        width: 100%;
+        height: auto;
+        line-height:45px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 21px;
+    }
+    /** Huincha Informativa MOBILE **/
+    div.huincha div.contenedor {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0px;
+    }
+    div.huincha div.contenedor div.boton {
+        margin:0;
+    }
+    div.huincha div.contenedor div.texto{
+        margin-bottom: 5px;
+    }
+    div.espaciado{
+      height: 26px;
+     /*display:block;*/
+    }
+    /** FIN Huincha Informativa MOBILE **/
+   
+   /** Huincha Informativa Mobile **/
+    .huincha-responsivo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: visible;
+        position: fixed;
+        padding: 5px 25px;
+        /*bottom: 70px;*/
+        top:63px;
+        height: 80px;
+        width: 100%;
+        z-index: 550;
+        background-color:rgba(58,59,63,1);
+        color:#FFFFFF;
+        font-size: 12px;
+        text-align: center;
+    }
+    .huincha-responsivo .texto{
+        line-height: 1.5;
+        color: #ffffff;
+    }
+
+    /** FIN Huincha Informativa Mobile **/
+}
